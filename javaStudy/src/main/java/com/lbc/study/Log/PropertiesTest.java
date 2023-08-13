@@ -9,7 +9,7 @@ public class PropertiesTest {
         Properties properties = new Properties();
         System.out.println(properties);
 
-        properties.load(new FileReader("/Users/mao/Learn/ideaProject/javaStudy/src/main/java/com/lbc/study/users.properties"));
+        properties.load(new FileReader("D:\\Study\\IDEA\\idea project\\WorkStudy\\javaStudy\\src\\main\\java\\com\\lbc\\study\\users.properties"));
         System.out.println(properties);
         System.out.println(properties.getProperty("张无忌"));
     }

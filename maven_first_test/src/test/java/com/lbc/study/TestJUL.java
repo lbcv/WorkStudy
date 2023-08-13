@@ -3,6 +3,7 @@ package com.lbc.study;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.logging.*;
 
 public class TestJUL {
@@ -70,5 +71,16 @@ public class TestJUL {
         LOGGER.fine("fine");
         LOGGER.finer("finer");
         LOGGER.finest("finest");
+    }
+
+    @Test
+    public void readConfig() throws IOException {
+        LogManager manager = LogManager.getLogManager();
+
+        InputStream in = Thread.currentThread().getContextClassLoader().getResourceAsStream("users.properties");
+        System.out.println(in);
+//        manager.readConfiguration(in);
+        Logger logger = Logger.getLogger(TestJUL.class.getName());
+        logger.fine("fine");
     }
 }
