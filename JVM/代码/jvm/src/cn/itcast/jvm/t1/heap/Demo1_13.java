@@ -9,14 +9,14 @@ import java.util.List;
 public class Demo1_13 {
 
     public static void main(String[] args) throws InterruptedException {
-        List<Student> students = new ArrayList<>();
+        List<Log> students = new ArrayList<>();
         for (int i = 0; i < 200; i++) {
-            students.add(new Student());
+            students.add(new Log());
 //            Student student = new Student();
         }
         Thread.sleep(1000000000L);
     }
 }
-class Student {
+class Log {
     private byte[] big = new byte[1024*1024];
 }
