@@ -20,8 +20,10 @@ public class TestLog4j {
 //        Layout layout = new PatternLayout();
 //        consoleAppender.setLayout(layout);
 //        root.addAppender(consoleAppender);
-        LOG.info("log");
-
-
+        LOG.trace("trace");
+        LOG.debug("debug");
+        LOG.info("info");
+        LOG.warn("warn");
+        LOG.error("error");
     }
 }

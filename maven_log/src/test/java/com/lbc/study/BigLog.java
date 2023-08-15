@@ -21,5 +21,5 @@ public class BigLog {
 
 }
 class Log {
-    private byte[] big = new byte[1024*10240];
+    private byte[] big = new byte[1024*10];
 }
